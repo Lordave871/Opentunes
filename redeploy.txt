@@ -1,0 +1,1 @@
+Redeploy trigger. Uploading this file makes Vercel build the site again so it picks up the ES_KEY environment variable.
