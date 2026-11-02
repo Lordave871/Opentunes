@@ -539,7 +539,7 @@ function spUI(){let b=$('#spb');if(!b){b=document.createElement('button');b.id='
    Paste your Clerk publishable key (pk_test_... / pk_live_...). From Vercel Marketplace > Clerk it is
    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, safe to expose. Enable Google in the Clerk dashboard. Empty = no profile button.
    Everyone can listen freely; liking, playlists and saving music need a signed-in profile. */
-const CLERK_PUBLISHABLE_KEY='';
+const CLERK_PUBLISHABLE_KEY='pk_test_YWJsZS1tb3JheS0xNzkuY2xlcmsuYWNjb3VudHMuZGV2JA';
 let CLK=0,CLKR=0;
 (function(){const k=String(CLERK_PUBLISHABLE_KEY).trim();if(!/^pk_(test|live)_/.test(k))return;let dom;try{dom=atob(k.split('_')[2]).slice(0,-1)}catch{return}CLK=1;
  const g=document.createElement('div');g.id='gate';g.innerHTML='<button class="ib gx" aria-label="Close">\u2715</button><div class="gc"><div class="logo"><i></i>Open Tunes</div><p>Continue with Google to like songs, build playlists and save music</p><div id="clk"></div></div>';document.body.appendChild(g);
